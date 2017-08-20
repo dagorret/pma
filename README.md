@@ -15,6 +15,10 @@ on a Laravel Homestead box.
 
 5. Go to [http://phpmyadmin.app:8000](http://phpmyadmin.app:8000). Default credentials are username `homestead` and password `secret`
 
+In Homestead 3.0:
+
+use systemctl restart nginx.service and reconfigure https liste phpmyadmin.app config
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
