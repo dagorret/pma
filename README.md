@@ -1,23 +1,22 @@
-## About
+## Acerca
 
-Simple shell script that automatically installs the latest version of PhpMyAdmin
-on a Laravel Homestead box.
+Un script para instalar PhpMyAdmin en Laravel Homestead
 
-## Usage
+## Uso
 
-1. SSH into your Homestead box `homestead ssh` or `vagrant ssh`
+1. Ingresar via SSH a Homestead `homestead ssh` or `vagrant ssh`
 
-2. `cd` to your code/projects directory (by default `~/Code`)
+2. `cd` al directorio de los proyecto (by default `~/code`)
 
 3. `$ curl -sS https://raw.githubusercontent.com/grrnikos/pma/master/pma.sh | sh`
 
-4. Open the `/etc/hosts` file on your main machine and add `127.0.0.1  phpmyadmin.app`
+4. Abrir `/etc/hosts` en la máquina host y agregar `192.168.10.10  phpmyadmin.test`
 
-5. Go to [http://phpmyadmin.app:8000](http://phpmyadmin.app:8000). Default credentials are username `homestead` and password `secret`
+5. Mapear /home/vagrant/code/phpmyadmin to phpmyadmn.test en el archivo yaml de homestead
 
-In Homestead 3.0:
+6. Ejecutar vagrant provision. Para recargar el nginx de vagrant
 
-use systemctl restart nginx.service and reconfigure https liste phpmyadmin.app config
+5. Ir a [http://phpmyadmin.test](http://phpmyadmin.test). El usuario es `homestead` y el password `secret`
 
 ## License
 
