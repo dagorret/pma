@@ -21,3 +21,6 @@ Un script para instalar PhpMyAdmin en Laravel Homestead
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## Nota
+9/2019 : Probado en Homestead beta
